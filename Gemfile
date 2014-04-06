@@ -4,6 +4,7 @@ ruby '2.1.1'
 gem 'rails', '4.0.3'
 gem 'pg'
 gem 'pry-rails'
+gem 'annotate', '~> 2.6.3'
 
 group :development, :test do
   gem 'rspec-rails'
