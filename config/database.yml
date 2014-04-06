@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: failureresume_development
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: failureresume_test
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: failureresume_production
+  host: localhost
