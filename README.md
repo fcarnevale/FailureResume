@@ -1,3 +1,5 @@
 #Failure Resume
 
-Inspired by Tina Seelig of Stanford University
+Work in Progress
+
+*Inspired by Tina Seelig of Stanford University*
