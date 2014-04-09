@@ -11,4 +11,6 @@
 class Resume < ActiveRecord::Base
   belongs_to :user
   has_many :failures
+
+  accepts_nested_attributes_for :failures
 end
