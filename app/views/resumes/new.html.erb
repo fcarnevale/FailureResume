@@ -1,0 +1,9 @@
+<h1>Failure Resume</h1>
+
+<%= form_for @resume do |f| %>
+  <%= f.fields_for :failures do |builder| %>
+    <%= render 'failure_fields', :f => builder %>
+  <% end %>
+
+  <%= f.submit "Save", class: "btn btn-large btn-primary" %>
+<% end %>
