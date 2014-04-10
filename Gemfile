@@ -5,6 +5,7 @@ gem 'rails', '4.0.3'
 gem 'pg'
 gem 'pry-rails'
 gem 'annotate', '~> 2.6.3'
+gem 'bootstrap-sass', '~> 3.1.1'
 
 group :development, :test do
   gem 'rspec-rails'
