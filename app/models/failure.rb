@@ -5,7 +5,7 @@
 #  id          :integer          not null, primary key
 #  resume_id   :integer
 #  description :string(255)
-#  lesson      :string(255)
+#  lesson      :text
 #  created_at  :datetime
 #  updated_at  :datetime
 #
