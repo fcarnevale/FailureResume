@@ -2,6 +2,7 @@
 <div id="counter"><span></span></div>
 
 <%= form_for @resume do |f| %>
+  <%= render 'shared/error_messages', object: f.object %>
   <%= f.fields_for :failures do |builder| %>
     <%= render 'failure_fields', :f => builder %>
   <% end %>
