@@ -15,6 +15,16 @@ class ResumesController < ApplicationController
   def new
   end
 
+  def create
+    @resume = @user.build_resume(resume_params)
+
+    if @resume.save
+      redirect_to resume_path(@resume), flash: { success: "Failure resume created!" }
+    else
+      render 'new'
+    end
+  end
+
   def show
   end
 
@@ -36,5 +46,7 @@ class ResumesController < ApplicationController
       @failures = @resume.failures
     end
 
+    def resume_params
+      params.require(:resume).permit(:id, failures_attributes: [:id, :description, :lesson])
     end
 end
