@@ -1,7 +1,9 @@
 <div class="failure">        
-  <%= f.text_field :description, placeholder: "Description of your failure." %>
-  <br \>
-  <%= f.text_area :lesson, placeholder: "What did you learn from this failure?" %>
-  <br \>
+  <div class="form-wrapper">
+    <%= f.text_field :description, class: "description", placeholder: "Describe your failure." %>
+  </div>
+  <div class="form-wrapper">
+    <%= f.text_area :lesson, class: "lesson", placeholder: "What did you learn from this failure?" %>
+  </div>
   <br \>
 </div>

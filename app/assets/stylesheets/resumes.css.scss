@@ -3,14 +3,38 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 form {
+  .form-wrapper {
+    position: relative;
+    width: 505px;
+  }
+
   .failure {
     input[type="text"] {
-      width: 400px;
+      height: 40px;
+      width: 500px;
+      padding: 4px;
       margin-bottom: 10px;
     }
 
     textarea {
-      width: 400px;
+      height: 150px;
+      width: 500px;
+      padding: 4px;
     }
   }
+#counter {
+  span {
+    color: #F08080;
+  }
+  display: inline;
+  position: absolute;
+  z-index: 1000;
+  opacity: 0.3;
+  height: 50px;
+  width: 150px;
+  text-align: right;
+  font-size: 40px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 200;
+  letter-spacing: -1px;
 }
