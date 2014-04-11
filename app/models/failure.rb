@@ -12,4 +12,7 @@
 
 class Failure < ActiveRecord::Base
   belongs_to :resume
+
+  validates :description, presence: true, length: { maximum: 60 }
+  validates :lesson, presence: true, length: { maximum: 400 }
 end
