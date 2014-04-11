@@ -4,8 +4,12 @@ class ResumesController < ApplicationController
   before_action :load_resume_and_user, only: :show
 
   def home
-    # FIXME: temporary (eventually use login/resume status to redirect appropriately)
-    render action: :new
+    # FIXME: temporary implementation until login gets added
+    if @user.resume
+      redirect_to resume_path(@user.resume)
+    else
+      redirect_to action: :new
+    end
   end
 
   def new
