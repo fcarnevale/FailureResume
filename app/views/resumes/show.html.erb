@@ -1,0 +1,6 @@
+<h1>@<%= @user.twitter_handle %></h1>
+
+<% @failures.each do |failure| %>
+  <h3><%= failure.description %></h3>
+  <p><%= failure.lesson %></p>
+<% end %>

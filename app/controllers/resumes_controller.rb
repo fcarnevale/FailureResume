@@ -15,6 +15,9 @@ class ResumesController < ApplicationController
   def new
   end
 
+  def show
+  end
+
   private
     def load_user
       # FIXME: temporary implementation for testing
