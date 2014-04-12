@@ -1,0 +1,7 @@
+-add devise and twitter auth
+-update the controller accordingly after adding devise and twitter auth
+-change /resumes/:id to /{twitter_handle}
+-add easy twitter/email sharing buttons
+-add a few different resume style options
+-add a jQuery-enabled button to add/remove additional failures to a resume (only gets shown if someone first creates a full resume)
+-add some basic copy and a call to action on the home page
