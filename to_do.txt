@@ -4,4 +4,5 @@
 -add easy twitter/email sharing buttons
 -add a few different resume style options
 -add a jQuery-enabled button to add/remove additional failures to a resume (only gets shown if someone first creates a full resume)
+-think about how to do this more RESTfully
 -add some basic copy and a call to action on the home page
