@@ -13,4 +13,8 @@ class Resume < ActiveRecord::Base
   has_many :failures
 
   accepts_nested_attributes_for :failures
+
+  def to_param
+    user.twitter_handle
+  end
 end

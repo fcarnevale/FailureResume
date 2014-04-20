@@ -1,6 +1,9 @@
 FailureResume::Application.routes.draw do
   root 'resumes#home'
-  resources :resumes
+  # resources :resumes
+  resources :resumes, only: [:index, :new, :create]
+  resources :resumes, path: "", except: [:index, :new, :create]
+  get '*id', to: 'resumes#show'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
