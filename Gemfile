@@ -6,6 +6,7 @@ gem 'pg'
 gem 'pry-rails'
 gem 'annotate', '~> 2.6.3'
 gem 'bootstrap-sass', '~> 3.1.1'
+gem 'omniauth-twitter'
 
 group :development, :test do
   gem 'rspec-rails'
