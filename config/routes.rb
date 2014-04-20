@@ -1,6 +1,10 @@
 FailureResume::Application.routes.draw do
   root 'resumes#home'
   # resources :resumes
+  match '/auth/:provider/callback', to: 'sessions#create', via: [:get, :post]
+  match '/auth/failure', to: redirect('/'), via: [:get, :post]
+  match '/signout', to: 'sessions#destroy', as: 'signout', via: [:get, :post]
+
   resources :resumes, only: [:index, :new, :create]
   resources :resumes, path: "", except: [:index, :new, :create]
   get '*id', to: 'resumes#show'
